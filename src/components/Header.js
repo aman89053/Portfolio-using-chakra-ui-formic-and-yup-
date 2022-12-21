@@ -36,7 +36,7 @@ const socials = [
 const Header = () => {
   const HeaderRef=useRef();
   useEffect(()=>{
-    const prevPosScroll=window.scrollY;
+    let prevPosScroll=window.scrollY;
     const handleScroll=()=>{
      const currentPosScroll=window.scrollY;
       const Header=HeaderRef.current;
