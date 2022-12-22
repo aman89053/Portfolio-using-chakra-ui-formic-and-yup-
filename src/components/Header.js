@@ -44,10 +44,10 @@ const Header = () => {
         return;
       }
       if(prevPosScroll>currentPosScroll){
-        Header.style.opacity="1";
+        Header.style.transform="translateY(0)";
       }
       else{
-        Header.style.opacity="0";
+        Header.style.transform="translateY(-100px)";
       }
       prevPosScroll=currentPosScroll;
 
